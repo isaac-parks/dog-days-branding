@@ -50,6 +50,26 @@
             </div>
             <h1 class="seasonings-title">Seasonings</h1>
         </div>
+        <div class="seasonings-buttons">
+            <button>Beef</button>
+            <button>Pork</button>
+            <button>Taco</button>
+            <button>Chili</button>
+            <button>Poultry & Fish</button>
+            <button>Hot Pepper</button>
+            <button>BBQ Rub</button>
+        </div>
+        <div class="about-us">
+            <div class="about-us-img"></div>
+            <div class="about-us-description">
+                <h1>About Us</h1>
+                <p>
+                    Our philosophy is simple: nature knows best. No artificial additives, no animal products, just the wholesome goodness of our peppers and certified organic herbs & spices. From the earth to your table, we ensure nothing but the best.
+                    <br>
+                    At Smiling Jim’s, we’re more than just a seasoning blend company. We’re a testament to the power of organic, all-natural ingredients. With 14 varieties of home-grown peppers and a dedication to small-batch craftsmanship, every packet we create is a promise of purity and flavor.
+                </p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
@@ -126,6 +146,7 @@
         width: 100%;
         height: 9rem;
         margin-top: 3rem;
+        margin-bottom: 4rem;
     }
     .seasonings-banner {
         display: flex;
@@ -154,15 +175,44 @@
 
     }
     .seasonings-title {
-            color: #264B19;
-    /* SJ - Title */
-    font-family: "BenguiatProITC-Bold";
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 95%; /* 20.9px */ 
-    position: absolute;
-    bottom: -20%;
-    left: 10%;
+        color: #264B19;
+        /* SJ - Title */
+        font-family: "BenguiatProITC-Bold";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 95%; /* 20.9px */ 
+        position: absolute;
+        bottom: -25%;
+        left: 5%;
+    }
+
+    .seasonings-buttons{
+        display: flex;
+        height: 144px;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 12px;
+        align-self: stretch;
+        flex-wrap: wrap;
+    }
+    .seasonings-buttons button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 75px;
+        background: #93BB84;
+        border: none;
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+        width: 120px;
+        font-family: "BenguiatProITC-Bold"; 
+    }
+
+    .about-us {
+        position: relative;
     }
 </style>
