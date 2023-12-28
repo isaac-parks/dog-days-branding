@@ -1,5 +1,8 @@
 @import url(https://db.onlinewebfonts.com/c/7018b263d9ce5edc3f3f1019c0c3ad51?family=BenguiatProITC-Bold); 
 
+html {
+    overflow-x: hidden;
+}
 body {
     margin: 0
 }
