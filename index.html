@@ -60,7 +60,8 @@
             <button>BBQ Rub</button>
         </div>
         <div class="about-us">
-            <div class="about-us-img"></div>
+            <div class="about-us-img">
+            </div>
             <div class="about-us-description">
                 <h1>About Us</h1>
                 <p>
@@ -214,5 +215,34 @@
 
     .about-us {
         position: relative;
+        display: flex;
+        gap: 20px;
+        margin-top: 5rem;
+        width: 95%;
+    }
+    .about-us-img {
+        width: 151px;
+        height: 357px;
+        flex-shrink: 0;
+        border-radius: 75.5px;
+        background: url("./peppers.jpg"), lightgray 50% / cover no-repeat;
+        background-size: 150%;
+    }
+    .about-us-description h1 {
+        color: #264B19;
+        /* SJ - Title */
+        font-family: "BenguiatProITC-Bold"; 
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 95%; /* 20.9px */
+        margin-bottom: 10px;
+    }
+    .about-us-description p{
+        font-size: 15px;
+        color: #264B19;
+        font-style: normal;
+        font-weight: 100;
+        line-height: normal;
     }
 </style>
