@@ -25,7 +25,7 @@
         </div>
         <div class="seasonings-header">
             <div class="seasonings-banner">
-                <svg class="seasonings-svg" width="500" height="180" viewBox="0 0 500 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="seasonings-svg" width="90%" height="180" viewBox="0 0 500 180" fill="none" overflow="hidden" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_bd_67_892)">
                     <path d="M0 0H227V77H0V0Z" fill="black" fill-opacity="0.38" shape-rendering="crispEdges"/>
                     <path d="M1 1H226V76H1V1Z" stroke="white" stroke-width="2" shape-rendering="crispEdges"/>
@@ -180,9 +180,11 @@
     }
     
     .seasonings-svg {
+        display: block;
         position: absolute;
-        top: 25%;
+        top: 15%;
         left: 0.75rem;
+        overflow: hidden;
     }
 
     #seasoning-jar-img {

@@ -1,0 +1,26 @@
+@import url(https://db.onlinewebfonts.com/c/7018b263d9ce5edc3f3f1019c0c3ad51?family=BenguiatProITC-Bold); 
+
+html {
+    overflow-x: hidden;
+    background-color: #264B19;
+}
+body {
+    margin: 0;
+    background-color: white;
+}
+
+body * {
+    margin: auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        width: 50%;
+        margin: auto;
+        border: 1px solid white;
+    }
+}
