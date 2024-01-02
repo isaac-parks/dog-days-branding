@@ -11,18 +11,23 @@
     <div class="home-page">
         <header>
             <h1>Smiling Jim's</h1>
+            <div class="header-links">
+                <a href="/">about</a>
+                <a href="/">shop</a>
+                <a href="/">seasonings</a>
+            </div>
         </header>
         <div class="banner" style="justify-content: center; align-items: center; gap: 10px; display: inline-flex">
             <img class="button-image" src="./smiling.png" />
         </div>
         <div class="button-links">
-            <button class="button-link">Seasonings</button>
+            <button class="button-link">About</button>
             <button class="button-link">Shop</button>
-        </div>
+        </div>        
         <div class="button-links">
-            <button class="button-link">About Us</button>
-            <button class="button-link">Locations</button>
+            <button class="button-link">Seasonings</button>
         </div>
+    <!-- this is named wrong, don't be confused <3 -->
         <div class="seasonings-header">
             <div class="seasonings-banner">
                 <svg class="seasonings-svg" width="90%" height="180" viewBox="0 0 500 180" fill="none" overflow="hidden" xmlns="http://www.w3.org/2000/svg">
@@ -48,16 +53,6 @@
                 </svg> 
                 <img id="seasoning-jar-img" src="./seasoning-jar.png" alt="seasoning-jar">
             </div>
-            <h1 class="seasonings-title">Seasonings</h1>
-        </div>
-        <div class="seasonings-buttons">
-            <button>Beef</button>
-            <button>Pork</button>
-            <button>Taco</button>
-            <button>Chili</button>
-            <button>Poultry & Fish</button>
-            <button>Hot Pepper</button>
-            <button>BBQ Rub</button>
         </div>
         <div id=about-us class="about-us">
             <div class="about-us-img">
@@ -66,7 +61,7 @@
                 <h1>About Us</h1>
                 <p>
                     Our philosophy is simple: nature knows best. No artificial additives, no animal products, just the wholesome goodness of our peppers and certified organic herbs & spices. From the earth to your table, we ensure nothing but the best.
-                    <br>
+                    <br><br>
                     At Smiling Jim’s, we’re more than just a seasoning blend company. We’re a testament to the power of organic, all-natural ingredients. With 14 varieties of home-grown peppers and a dedication to small-batch craftsmanship, every packet we create is a promise of purity and flavor.
                 </p>
             </div>
@@ -83,6 +78,7 @@
                 <li><span class="feature-key">Mild Heat:</span> Flavorful with a heat level less intense than a jalapeno.</li>
             </ol>
         </div>
+        <!-- this is named wrong, don't be confused <3 -->
         <div id=simply-differnt class="about-us">
             <div class="about-us-description">
                 <h1>Our Process</h1>
@@ -93,6 +89,21 @@
             <div class="our-process-img">
             </div>
         </div>
+        <div class="seasonings-wrapper">
+            <h1>Our Seasonings</h1>
+            <div class="seasonings-buttons">
+                <button>Beef</button>
+                <button>Pork</button>
+                <button>Taco</button>
+                <button>Chili</button>
+                <button>Poultry & Fish</button>
+                <button>Hot Pepper Blend</button>
+                <button>BBQ Rub</button>
+            </div>            
+        </div>
+    </div>
+    <div class="footer">
+        <p style="padding: 2rem  2rem;">"You Can't Go Wrong With That!"</p>
     </div>
 </body>
 </html>
@@ -104,15 +115,13 @@
     }
     header{
         display: flex;
-        background: #264B19;
-        color: white;
+        color: #264B19;
         width: 100%;
         height: 67px;
     }
     header h1{
         margin-top: 2rem;
         margin-left: 1rem;
-        color: #FFF;
         font-family: "BenguiatProITC-Bold"; 
         font-size: 22px;
         font-style: normal;
@@ -146,7 +155,6 @@
     }
     .button-link {
         outline: none;
-        border: none;
         display: flex;
         width: 150px;
         height: 45px;
@@ -154,11 +162,17 @@
         align-items: center;
         gap: 10px;
         flex-shrink: 0; 
-        color: white;
         border-radius: 75px;
-        background: #93BB84;
-        font-size: 1.35rem;
+        font-size: 1rem;
         font-family: "BenguiatProITC-Bold";
+        border-radius: 75px;
+        border: 4px solid #264B19;
+        color: #264B19;
+        background: white;
+        text-align: center;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 95%; /* 15.2px */
     }
 
     .seasonings-header {
@@ -221,6 +235,7 @@
         gap: 12px;
         align-self: stretch;
         flex-wrap: wrap;
+        width: 70%;
     }
     .seasonings-buttons button {
         display: flex;
@@ -230,19 +245,22 @@
         border-radius: 75px;
         background: #93BB84;
         border: none;
-        color: white;
-        font-size: 18px;
+        color: #264B19;;
+        font-size: 16px;
         padding: 10px;
-        width: 120px;
+        width: 8rem;
         font-family: "BenguiatProITC-Bold"; 
+        border-radius: 75px;
+        border: 4px solid #264B19;
+        background: #FFF;
     }
 
     .about-us {
         position: relative;
         display: flex;
         gap: 20px;
-        margin-top: 5rem;
-        width: 95%;
+        margin-top: 1.5rem;
+        width: 85%;
     }
     .about-us-img {
         width: 151px;
@@ -263,7 +281,7 @@
         margin-bottom: 10px;
     }
     .about-us-description p{
-        font-size: 15px;
+        font-size: 0.75rem;
         color: #264B19;
         font-style: normal;
         font-weight: 100;
@@ -318,5 +336,22 @@
         background: url("./seasoning-bowl.jpg"), lightgray 50% / cover no-repeat;
         background-size: 100%;
         background-position: left center;
+    }
+
+    .seasonings-wrapper h1 {
+        position: relative;
+        color: #FFF;
+        text-align: center;
+        /* SJ - Title */
+        font-family: Benguiat Pro ITC;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 95%; /* 20.9px */
+        padding: 0.5rem 3rem;
+        background-color: #264B19;
+        width: 60%;
+        margin-top: 4rem;
+        margin-bottom: 1rem;    
     }
 </style>
