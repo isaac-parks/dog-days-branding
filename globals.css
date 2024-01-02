@@ -36,8 +36,9 @@ h1 {
 
 @media only screen and (min-width: 768px) {
     body {
-        width: 50%;
+        width: 30%;
         margin: auto;
-        border: 1px solid white;
+        border: 1px solid #264B19;
+        padding: 2rem;
     }
 }
