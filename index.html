@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smiling Jim's</title>
+    <link rel="icon" type="image/png" href="./smiling.png">
     <link rel="stylesheet" href="./globals.css">
     <link href="https://db.onlinewebfonts.com/c/7018b263d9ce5edc3f3f1019c0c3ad51?family=BenguiatProITC-Bold" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.typekit.net/qlv5lyc.css">
@@ -94,13 +95,13 @@
         <div class="seasonings-wrapper">
             <h1>Our Seasonings</h1>
             <div class="seasonings-buttons">
-                <button>Beef</button>
-                <button>Pork</button>
-                <button>Taco</button>
-                <button>Chili</button>
-                <button>Poultry & Fish</button>
-                <button>Hot Pepper Blend</button>
-                <button>BBQ Rub</button>
+                <button><a href="./seasonings.html#beef">Beef</a></button>
+                <button><a href="./seasonings.html#pork">Pork</a></button>
+                <button><a href="./seasonings.html#taco">Taco</a></button>
+                <button><a href="./seasonings.html#chili">Chili</a></button>
+                <button><a href="./seasonings.html#poultry">Poultry & Fish</a></button>
+                <button><a href="./seasonings.html#pepper">Hot Pepper Blend</a></button>
+                <button><a href="./seasonings.html#bbq">BBQ Rub</a></button>
             </div>            
         </div>
     </div>
@@ -180,6 +181,10 @@
     .button-link a {
         text-decoration: none;
         color: #264B19;
+        text-align: center;
+        font-family: "BenguiatProITC-Bold";
+        font-weight: 700;
+        line-height: 95%; /* 15.2px */
     }
 
     .seasonings-header {
@@ -262,6 +267,13 @@
         background: #FFF;
     }
 
+    .seasonings-buttons a {
+        text-decoration: none;
+        color: #264B19;;
+        font-size: 16px;
+    }
+
+
     .about-us {
         position: relative;
         display: flex;
@@ -327,6 +339,14 @@
     .features-list li {
         margin-bottom: 10px;
         font-size: 13px;
+        color: #264B19;
+        font-weight: 200;
+    }
+
+    .features-list span {
+        font-weight: bold;
+        color: #264B19;
+        font-size: 13px;
     }
 
     .feature-key {
@@ -343,6 +363,10 @@
         background: url("./seasoning-bowl.jpg"), lightgray 50% / cover no-repeat;
         background-size: 100%;
         background-position: left center;
+    }
+
+    .seasoings-wrapper {
+        margin-bottom: 2rem;
     }
 
     .seasonings-wrapper h1 {
