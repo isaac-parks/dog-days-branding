@@ -6,31 +6,33 @@
     <title>Smiling Jim's</title>
     <link rel="stylesheet" href="./globals.css">
     <link href="https://db.onlinewebfonts.com/c/7018b263d9ce5edc3f3f1019c0c3ad51?family=BenguiatProITC-Bold" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.typekit.net/qlv5lyc.css">
+
 </head>
 <body>
     <div class="home-page">
         <header>
-            <a href="/"><h1 class="header-title">Smiling Jim's</h1></a>
+            <a href="./"><h1 class="header-title">Smiling Jim's</h1></a>
             <div class="header-links">
-                <a href="/">About</a>
+                <a href="#about-us">About</a>
                 <a href="/">Shop</a>
-                <a href="/seasonings.html">Seasonings</a>
+                <a href="./seasonings.html">Seasonings</a>
             </div>
         </header>
         <div class="banner" style="justify-content: center; align-items: center; gap: 10px; display: inline-flex">
             <img class="button-image" src="./smiling.png" />
         </div>
         <div class="button-links">
-            <button class="button-link">About</button>
+            <button class="button-link"><a href="#about-us">About</a></button>
             <button class="button-link">Shop</button>
         </div>        
         <div class="button-links">
-            <button class="button-link">Seasonings</button>
+            <button class="button-link"><a href="./seasonings.html">Seasonings</a></button>
         </div>
     <!-- this is named wrong, don't be confused <3 -->
         <div class="seasonings-header">
             <div class="seasonings-banner">
-                <svg class="seasonings-svg" width="90%" height="180" viewBox="0 0 500 180" fill="none" overflow="hidden" xmlns="http://www.w3.org/2000/svg">
+                <svg class="seasonings-svg" width="120%" height="200" viewBox="0 0 500 180" fill="none" overflow="hidden" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_bd_67_892)">
                     <path d="M0 0H227V77H0V0Z" fill="black" fill-opacity="0.38" shape-rendering="crispEdges"/>
                     <path d="M1 1H226V76H1V1Z" stroke="white" stroke-width="2" shape-rendering="crispEdges"/>
@@ -175,6 +177,11 @@
         line-height: 95%; /* 15.2px */
     }
 
+    .button-link a {
+        text-decoration: none;
+        color: #264B19;
+    }
+
     .seasonings-header {
         flex-shrink: 0; 
         display: flex;
@@ -259,7 +266,7 @@
         position: relative;
         display: flex;
         gap: 20px;
-        margin-top: 1.5rem;
+        margin-top: 3rem;
         width: 85%;
     }
     .about-us-img {

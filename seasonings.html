@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./globals.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qlv5lyc.css">
+    <link href="https://db.onlinewebfonts.com/c/7018b263d9ce5edc3f3f1019c0c3ad51?family=BenguiatProITC-Bold" rel="stylesheet"> 
     <title>Smiling Jim's</title>
 </head>
 <body>
     <header style="background-color: #264B19; position: relative;">
-        <a style="margin-left: 1rem;" href="/"><h1 style="color:white" class="header-title">Smiling Jim's</h1></a>
+        <a style="margin-left: 1rem;" href="./"><h1 style="color:white" class="header-title">Smiling Jim's</h1></a>
         <div style="color: white" class="header-links">
-            <a style="color: white" href="/">About</a>
+            <a style="color: white" href="/index.html#about-us">About</a>
             <a style="color: white" href="/">Shop</a>
-            <a style="color: white"  href="/seasonings.html">Seasonings</a>
+            <a style="color: white"  href="./seasonings.html">Seasonings</a>
         </div>
     </header>
     <div class="seasonings-wrapper">
@@ -21,12 +23,57 @@
     </div>
     <div class="seasoning-sections">
         <section class="seasoning-banner-left">
-            <img src="peppers.jpg" alt="">
+            <img src="seasoning-bowl.jpg" alt="">
             <div class="seasoning-label">
                 <h1>Beef</h1>
                 <p>an aromatic blend with hints of thyme & garlic complimenting your protein of choice to tantalize your tastebuds! A FUSION OF FLAVOR!</p>
             </div>
         </section>
+        <section class="seasoning-banner-left">
+            <div style="text-align: right;" class="seasoning-label">
+                <h1>Pork</h1>
+                <p>an aromatic blend with hints of thyme & garlic complimenting your protein of choice to tantalize your tastebuds! A FUSION OF FLAVOR!</p>
+            </div>
+            <img src="seasoning-bowl.jpg" alt="">
+        </section>
+        <section class="seasoning-banner-left">
+            <img src="seasoning-bowl.jpg" alt="">
+            <div class="seasoning-label">
+                <h1>Poultry & Fish</h1>
+                <p>an aromatic blend with hints of thyme & garlic complimenting your protein of choice to tantalize your tastebuds! A FUSION OF FLAVOR!</p>
+            </div>
+        </section>
+        <section class="seasoning-banner-left">
+            <div style="text-align: right;" class="seasoning-label">
+                <h1>Taco</h1>
+                <p>an aromatic blend with hints of thyme & garlic complimenting your protein of choice to tantalize your tastebuds! A FUSION OF FLAVOR!</p>
+            </div>
+            <img src="seasoning-bowl.jpg" alt="">
+        </section>
+        <section class="seasoning-banner-left">
+            <img src="seasoning-bowl.jpg" alt="">
+            <div class="seasoning-label">
+                <h1>Chili</h1>
+                <p>an aromatic blend with hints of thyme & garlic complimenting your protein of choice to tantalize your tastebuds! A FUSION OF FLAVOR!</p>
+            </div>
+        </section>
+        <section class="seasoning-banner-left">
+            <div style="text-align: right;" class="seasoning-label">
+                <h1>BBQ Rub</h1>
+                <p>an aromatic blend with hints of thyme & garlic complimenting your protein of choice to tantalize your tastebuds! A FUSION OF FLAVOR!</p>
+            </div>
+            <img src="seasoning-bowl.jpg" alt="">
+        </section>
+        <section style="margin-bottom: 0" class="seasoning-banner-left">
+            <img src="seasoning-bowl.jpg" alt="">
+            <div class="seasoning-label">
+                <h1>Hot Pepper Blend</h1>
+                <p>an aromatic blend with hints of thyme & garlic complimenting your protein of choice to tantalize your tastebuds! A FUSION OF FLAVOR!</p>
+            </div>
+        </section>
+    </div>
+    <div style="margin: 0; " class="footer">
+        <p style="padding: 2rem  2rem;">"You Can't Go Wrong With That!"</p>
     </div>
 </body>
 </html>
@@ -58,26 +105,57 @@
         color: #264B19;
         width: 90%;
         margin: auto;
-        font-size: 0.65rem;
-        font-weight: bold;
+        font-size: 0.85rem;
+        font-family: futura-pt;
+        font-weight: 500;
     }
 
+    .seasoning-sections {
+        color:#264B19;
+    }
+
+
+
     .seasoning-banner-left {
-        display: flex;
-        width: 394px;
-        height: 215px;
+        margin: 2rem 0rem;
+        max-height: 20rem;
         padding: 20px 30px;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        display: flex;
         flex-shrink: 0;
+        gap:20px;
+    }
+
+    .seasoning-label{
+        display:flex;
+        flex-direction: column;
+        justify-self: flex-start;
+        flex: 1;
+        align-self: center;
+        
+    }
+
+    .seasoning-label h1 {
+        margin: 0;
+        font-family: futura-pt-bold;
+        font-weight: bold;
+    }
+
+    .seasoning-label p {
+        font-size: 0.9rem;
+        font-family: futura-pt;
+        font-weight: 400;
+
     }
 
     .seasoning-banner-left img {
         object-fit: cover;
-        max-width: 150px; 
-        border-radius: 50%; 
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
         overflow: hidden;
-    }
+    }          
+
 
 </style>
